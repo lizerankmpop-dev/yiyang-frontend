@@ -1,0 +1,18 @@
+import request from './request'
+
+export const getNurseItemList = (params) => request({ url: '/nurse-item/list', method: 'get', params })
+export const addNurseItem = (data) => request({ url: '/nurse-item/add', method: 'post', data })
+export const updateNurseItem = (data) => request({ url: '/nurse-item/update', method: 'post', data })
+export const deleteNurseItem = (id) => request({ url: '/nurse-item/delete', method: 'delete', params: { id } })
+export const getNursingLevelList = (params) => request({ url: '/nursing-level/list', method: 'get', params })
+export const addNursingLevel = (data) => request({ url: '/nursing-level/add', method: 'post', data })
+export const updateNursingLevel = (data) => request({ url: '/nursing-level/update', method: 'post', data })
+export const deleteNursingLevel = (id) => request({ url: '/nursing-level/delete', method: 'delete', params: { id } })
+export const getNursingRecordList = (params) => request({ url: '/nursing-record/list', method: 'get', params })
+export const addNursingRecord = (data) => request({ url: '/nursing-record/add', method: 'post', data })
+export const updateNursingRecord = (data) => request({ url: '/nursing-record/update', method: 'post', data })
+export const deleteNursingRecord = (id) => request({ url: '/nursing-record/delete', method: 'delete', params: { id } })
+export const getNurseCustomerList = (params) => request({ url: '/nurse-customer/list', method: 'get', params })
+export const assignNurseCustomer = (data) => request({ url: '/nurse-customer/assign', method: 'post', data })
+export const getNursingTaskList = (params) => request({ url: '/nursing/task/list', method: 'get', params })
+export const updateTaskStatus = (data) => request({ url: '/nursing/task/status', method: 'put', data })
