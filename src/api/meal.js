@@ -1,0 +1,15 @@
+import request from './request'
+
+export const getFoodList = (params) => request({ url: '/food/list', method: 'get', params })
+export const addFood = (data) => request({ url: '/food', method: 'post', data })
+export const updateFood = (data) => request({ url: '/food', method: 'put', data })
+export const deleteFood = (id) => request({ url: '/food/' + id, method: 'delete' })
+export const getMealList = (params) => request({ url: '/meal/list', method: 'get', params })
+export const addMeal = (data) => request({ url: '/meal', method: 'post', data })
+export const updateMeal = (data) => request({ url: '/meal', method: 'put', data })
+export const deleteMeal = (id) => request({ url: '/meal/' + id, method: 'delete' })
+export const getMealFoods = (id) => request({ url: '/meal/' + id + '/foods', method: 'get' })
+export const getPreferenceList = (params) => request({ url: '/preference/list', method: 'get', params })
+export const addPreference = (data) => request({ url: '/preference', method: 'post', data })
+export const updatePreference = (data) => request({ url: '/preference', method: 'put', data })
+export const deletePreference = (id) => request({ url: '/preference/' + id, method: 'delete' })
