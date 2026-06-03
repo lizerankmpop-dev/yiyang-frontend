@@ -1,0 +1,1 @@
+import{r as t}from"./request-280be39c.js";const d=o=>t({url:"/backdown/list",method:"get",params:o}),e=o=>t({url:"/backdown/apply",method:"post",data:o}),n=(o,a)=>t({url:"/backdown/audit/"+o,method:"put",data:a}),s=o=>t({url:"/backdown/cancel/"+o,method:"put"}),l=o=>t({url:"/backdown/"+o,method:"delete"});export{e as a,n as b,s as c,l as d,d as g};

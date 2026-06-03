@@ -1,0 +1,1 @@
+import{r as t}from"./request-280be39c.js";function r(e){return t({url:"/bed/list",method:"get",params:e})}function u(e){return t({url:"/bed/add",method:"post",data:e})}function o(e){return t({url:"/bed/update",method:"post",data:e})}function a(e){return t({url:"/bed/delete",method:"delete",params:{id:e}})}export{u as a,a as d,r as g,o as u};

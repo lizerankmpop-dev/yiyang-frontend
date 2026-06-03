@@ -1,0 +1,1 @@
+import{r as t}from"./request-280be39c.js";const o=e=>t({url:"/health-record/list",method:"get",params:e}),d=e=>t({url:"/health-record/add",method:"post",data:e}),a=e=>t({url:"/health-record",method:"put",data:e}),h=e=>t({url:"/health-record/"+e,method:"delete"}),l=()=>t({url:"/health-record/abnormal-beds",method:"get"});export{o as a,d as b,h as d,l as g,a as u};
