@@ -1,6 +1,12 @@
 # 颐养中心管理系统 · 前端
 
+[![Deploy to GitHub Pages](https://github.com/lizerankmpop-dev/yiyang-frontend/actions/workflows/deploy.yml/badge.svg)](https://github.com/lizerankmpop-dev/yiyang-frontend/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 基于 Vue 3 + Element Plus + Vite 的养老院管理系统前端，对接 [yiyang-backend](https://github.com/lizerankmpop-dev/yiyang-backend) 提供的 RESTful API。覆盖老人档案、床位、护理、餐饮、排班、数据看板与系统管理等业务场景。
+
+> 🔗 **在线演示**：<https://lizerankmpop-dev.github.io/yiyang-frontend/>
+> （静态页面可直接浏览 UI；涉及数据的操作需本地启动后端才能生效）
 
 ## 技术栈
 
@@ -27,6 +33,16 @@
 | 护理管理 | `views/nurse` `views/health` `views/schedule` |
 | 餐饮管理 | `views/meal` |
 | 系统管理 | `views/admin` `views/role` |
+
+## 部署
+
+仓库已配置 GitHub Actions 自动部署到 GitHub Pages（见 `.github/workflows/deploy.yml`）：
+
+1. `npm ci` 安装依赖
+2. 以 `BASE_PATH=/yiyang-frontend/` 执行 `vite build`
+3. 将 `dist/` 发布到 Pages，并生成 `404.html` 支持 SPA 路由回退
+
+推送到 `main` 分支即自动触发部署。
 
 ## 快速开始
 
