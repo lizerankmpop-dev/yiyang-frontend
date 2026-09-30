@@ -1,5 +1,0 @@
-chore: 移除误入库的 node_modules 与 dist，补充 README/LICENSE/.gitignore
-
-- node_modules（13393 个文件）与 dist 构建产物不应进入版本库
-- 新增 .gitignore 防止再次误提交
-- 新增 README 与 MIT LICENSE
